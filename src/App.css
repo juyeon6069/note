@@ -1,0 +1,321 @@
+/* Juyeon Nam 114580388 */
+
+/* Global CSS Variables: https://www.w3schools.com/css/css3_variables.asp */
+/* Reference these in your CSS to get the same color as the mockups */
+:root {
+  --actionBackgroundColor: #f76b8a;
+  --actionTextColor: white;
+  --activeColor: #66bfbf;
+  --standardBackgroundColor: #fcfefe;
+  --alternativeBackgroundColor: #eaf6f6;
+  --standardTextColor: black;
+  --lightThemeBG: lightgray;
+  --darkThemeBG: black;
+  --lightThemeText: black;
+  --darkThemeText: white;
+  --lightColor: lightgray;
+  --moderateColor: darkgray;
+}
+
+body {
+  background-color: var(--alternativeBackgroundColor);
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus  {
+  outline-color: var(--activeColor);
+}
+
+select {
+  border-color: var(--moderateColor);
+}
+
+input[type=text] {
+  border-color: var(--lightColor);
+}
+
+input[type=submit]:hover,
+input[type=button]:hover,
+button:hover {
+  transform: scale(1.1);
+}
+
+button:hover{
+  background-color:  var(--activeColor);
+  border-radius: 2px;
+}
+
+label:hover{
+  background-color:  var(--activeColor);
+  border-radius: 2px;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.light{
+  background-color: var(--lightThemeBG);
+  height: 100vh;
+}
+
+.dark{
+  background-color: var(--darkThemeBG);
+  height: 100vh;
+}
+
+.side-bar{
+  display: flex;
+  justify-content: flex-start;
+  height: 70px;
+}
+
+.small-form-side-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 70px;
+  border: solid;
+  border-color: var(--standardTextColor);
+}
+
+
+.search{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 30%;
+}
+
+
+.notes-list-title{
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  border: 1px solid;
+  align-items: center;
+  padding: 20px;
+}
+
+.notes-list-title-d{
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  border: 1px solid;
+  border-color: white;
+  align-items: center;
+  padding: 20px;
+}
+
+.edit-text{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  border: 1px solid;
+  align-items: center;
+  padding: 20px;
+}
+
+.edit-text-d{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  border: 1px solid;
+  border-color: white;
+  align-items: center;
+  padding: 20px;
+}
+
+.search-panel{
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  height: 75px;
+  align-items: center;
+}
+
+.edit-text-zone{
+  width: 70%;
+  padding: 8px 0px;
+}
+
+.notes{
+  display: flex;
+}
+
+#photo-frame{
+  border: 1px solid;
+  border-radius: 10%;
+  width: 50px;
+  height: 40px;
+  padding: 3px;
+  text-align: center;
+}
+
+
+.profile-image{
+  border-radius: 70%;
+  height: 100%;
+  width: 100%;
+}
+
+.search-term{
+  width: 80%;
+  height: 60%;
+}
+
+.edit-text-bar{
+  width: 100%;
+  height: 40px;
+}
+
+.notes-list{
+  border-style: double;
+  margin: 0px;
+  text-overflow: none;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.glyphicon-circle-arrow-up .glyphicon-circle-arrow-left .glyphicon-circle-arrow-right .glyphicon-trash{
+  height: 30%;
+}
+
+.small-form{
+  display: none;
+}
+
+#modal.modal-style {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+
+#modal .modal-window {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 50%; 
+  position: relative;
+  overflow: auto;
+  transform: translate(50%, 50%);
+}
+
+.modal-layer{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0; 
+  background: rgba(0, 0, 0, 0.6);
+  z-index:-1;
+}
+
+#modal .close-area {
+  display: inline;
+  float: right;
+  padding-right: 10px;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px gray;
+  color: white;
+} 
+
+.profile-modal-image{
+  border-radius: 70%;
+  width: 50px;
+  height: 50px;
+}
+
+#save{
+  background-color: steelblue;
+  color: white; 
+  border-radius: 2px;
+}
+
+.title{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  border-bottom: solid;
+  padding: 10px;
+  border-color: var(--standardTextColor);
+}
+
+.options{
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-save-logout{
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.addStyle{
+  background-color: coral;
+}
+
+.cclick {
+  background-color:  var(--activeColor);
+}
+
+#memo .notes-list p {
+  pointer-events : none;
+  margin: 0px;
+}
+
+@media all and (max-width: 500px) {
+  .noteListColumn {
+      display: none;
+  }
+  .small-form{
+      display: block;
+  }
+  .side-bar{
+      display: none;
+  }
+  .search{
+      display: none;
+  }
+  .profile-image{
+      border-radius: 0%;
+  }
+  .glyphicon-circle-arrow-up .glyphicon-circle-arrow-left .glyphicon-circle-arrow-right .glyphicon-trash{
+      height: 70%;
+  }   
+  .edit-text-zone{
+      width: 100%;
+  }
+  #modal.modal-style {
+    position: fixed;
+  }
+  
+  #modal .modal-window {
+    overflow: hidden;
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100vh;
+
+  }
+  
+
+  .profile-modal-image{
+      border-radius: 0%;
+      width: 50px;
+      height: 50px;
+  }
+
+}
+
+
+
