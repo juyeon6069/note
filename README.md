@@ -1,4 +1,3 @@
-# Assignment3
 
 Build note web, using HTML, CSS, Javascript, and React. Using a node/express backend server that talks to a mysql database server for persisting data.
 
